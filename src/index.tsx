@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './pages/app/App';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import AppRouter from './routes';
+
+/* Routes */
+import { AppRoute } from './pages/app/App';
+import { TechRadarRoute } from './pages/tech-radar/TechRadar';
+/* Routes */
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <AppRouter routes={[AppRoute, TechRadarRoute]} />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

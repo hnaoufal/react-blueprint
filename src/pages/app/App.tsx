@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 import { Counter } from "../../features/counter/Counter";
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.app}>
+      <header className={styles.header}>
+        <img src={logo} className={styles.logo} alt="logo" />
         <Counter />
       </header>
     </div>
@@ -15,3 +15,8 @@ function App() {
 }
 
 export default App;
+
+export const AppRoute = {
+  component: App,
+  url: '/',
+}
