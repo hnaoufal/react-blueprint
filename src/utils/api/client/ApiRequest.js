@@ -7,9 +7,6 @@ export default class ApiRequest {
     const requestUrl = !ulrParams ? url : `${url}?${ulrParams}`;
     const params = {
       method: 'GET',
-      cache: 'no-cache',
-      credentials: 'same-origin',
-      headers: this.getRequestHeaders(),
     };
     return fetch(requestUrl, params);
   }
@@ -18,7 +15,6 @@ export default class ApiRequest {
     const params = {
       method: 'POST',
       cache: 'no-cache',
-      credentials: 'same-origin',
       headers: this.getRequestHeaders(),
       body: JSON.stringify(payload),
     };
@@ -46,13 +42,10 @@ export default class ApiRequest {
   }
 
   getRequestHeaders(contentType = 'application/json') {
-    const headers = new Headers({
-      Accept: 'application/json',
-      'X-Requested-With': 'XMLHttpRequest',
-    });
-    if (contentType !== null) {
-      headers.append('Content-Type', contentType || 'application/json');
-    }
+    const headers = {
+      'Content-Type': contentType
+    };
+
     return headers;
   }
 }

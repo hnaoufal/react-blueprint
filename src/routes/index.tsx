@@ -13,7 +13,7 @@ export const AppRoutes = ({ routes }: Props) => {
   return (
     <Suspense fallback={null}>
       <Switch>
-        {routes && routes.length && routes.map(routeModule => <Route exact path={routeModule.url} component={routeModule.component} />)}
+        {routes && routes.length && routes.map(routeModule => <Route key={routeModule.url} exact path={routeModule.url} component={routeModule.component} />)}
         <Route path="/not-found" component={NotFound} />
         <Redirect to="/not-found" />
       </Switch>

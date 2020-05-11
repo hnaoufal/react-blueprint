@@ -1,5 +1,3 @@
-import { settings } from '@leverton/frontend-utils';
-
 import ApiRequest from './ApiRequest';
 
 export class ApiClient {
@@ -54,4 +52,4 @@ export class ApiClient {
   }
 }
 
-export const apiClient = new ApiClient(settings.apiUrl);
+export const apiClient = new ApiClient('');
