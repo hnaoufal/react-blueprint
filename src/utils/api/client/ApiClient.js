@@ -43,12 +43,14 @@ export class ApiClient {
    * @return {Object}
    */
   static processResponse(response) {
-    return response.json().then((json) => {
-      if (response.status < 200 || response.status >= 400) {
-        throw new Error(json);
-      }
-      return json;
-    });
+    return response.data;
+
+    // return response.json().then((json) => {
+    //   if (response.status < 200 || response.status >= 400) {
+    //     throw new Error(json);
+    //   }
+    //   return json;
+    // });
   }
 }
 

@@ -1,24 +1,27 @@
-import 'whatwg-fetch';
+import axios from 'axios';
 import encodeUrlParams from './encodeUrlParams';
 
 export default class ApiRequest {
   get = (url, query) => {
-    const ulrParams = encodeUrlParams(query);
-    const requestUrl = !ulrParams ? url : `${url}?${ulrParams}`;
-    const params = {
-      method: 'GET',
-    };
-    return fetch(requestUrl, params);
+    const urlParams = encodeUrlParams(query);
+    const requestUrl = !urlParams ? url : `${url}?${urlParams}`;
+    return axios.get(requestUrl);
   }
 
   post = (url, payload) => {
-    const params = {
-      method: 'POST',
-      cache: 'no-cache',
-      headers: this.getRequestHeaders(),
-      body: JSON.stringify(payload),
-    };
-    return fetch(url, params);
+    return axios.post(url, payload);
+  }
+
+  patch = (url, payload) => {
+    return axios.patch(url, payload);
+  }
+
+  delete = (url) => {
+    return axios.delete(url);
+  }
+
+  delete = (url) => {
+    return axios.delete(url);
   }
 
   postFile = (url, file, payload) => {
