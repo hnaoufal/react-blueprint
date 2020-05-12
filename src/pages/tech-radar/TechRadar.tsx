@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './TechRadar.module.css';
-import { UsersTable } from '../../features/users/UsersTable';
+import { radar_visualization } from '../../components/radar';
+import { config } from '../../components/config';
 
-const TechRadar = () => <div className={styles.techRadar}>
-    <UsersTable />
-</div>;
+const TechRadar = () => {
+
+    useEffect(() => {
+        radar_visualization(config);
+    }, []);
+
+    return <div className={styles.techRadar}>
+        <svg id="radar"></svg>
+    </div>
+};
 
 export default TechRadar;
 
