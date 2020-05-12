@@ -8,7 +8,7 @@ export interface RingsInterface {
 }
 
 export interface TechRadarConfig {
-  svg_id: string,
+  svg_id: string, // id svg
   width: number,
   height: number,
   colors: {
@@ -61,7 +61,7 @@ export const config =
       ring: 0,
       label: "AWS EMR",
       active: false,
-      link: "../data_processing/aws_emr.html",
+      link: "http://localhost:3000/tech-radar/edit",
       moved: 0
     },
     {
