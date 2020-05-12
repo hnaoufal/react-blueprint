@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './Edit.module.css';
-import Button from '@material-ui/core/Button'; 
+import Button from '@material-ui/core/Button';
 
 const Edit = () => {
 
-    return <Button variant="contained" color="primary">
-          Hello World
-        </Button> 
+    return <Button variant="contained" color="primary">
+        Hello World
+        </Button>
 };
 
 export default Edit;

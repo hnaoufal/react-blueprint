@@ -8,7 +8,7 @@ import AppRouter from './routes';
 
 /* Routes */
 import { AppRoute } from './pages/app/App';
-import { TechRadarRoute } from './pages/tech-radar/TechRadar';
+import { TechRadarRoute } from './pages/tech-radar/TechRadarPage';
 import { EditRoute } from './pages/tech-radar/edit/Edit';
 /* Routes */
 
