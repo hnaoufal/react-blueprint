@@ -6,25 +6,30 @@ import { entriesList, getEntries } from "../../features/entries/entriesSlice";
 import { configObject, getConfig } from "../../features/config/configSlice";
 import { entries2 } from "../../components/TechRadar/config2";
 
-// quadrant: number,
-// ring: number,
-// label: string,
-// active: boolean,
+// remove
+const mapper = (entries: any) => {
+  const qu = [
+    "Language",
+    "Infrastructure",
+    "Framework",
+    "Data Management"
+  ];
 
-// const mapper = 
+  const r = [
+    "Adopt",
+    "Assess/Trial",
+    "Hold",]
 
-const mapper = (config: any, entries: any) => {
-  const quadrantIndex = ;
-  const ringIndex = ;
-
-  return entries.map((entry: any) => ({
-    label: entry.Techonolgy,
-    quadrant: ,
-    ring: ,
+  const test = entries.map((entry: any) => ({
+    quadrant: qu.indexOf(entry['Quadrant']),
+    ring: r.indexOf(entry.Ring),
+    label: entry['Technology'],
     active: false,
-    moved: 0,
-    link: ''
+    link: '',
+    moved: 0
   }));
+
+  return test;
 }
 
 function App() {
@@ -39,7 +44,7 @@ function App() {
 
   return (
     <Container>
-      <TechRadar config={{ ...config, entries: mapper(config, entries2) }} />
+      <TechRadar config={{ ...config, entries: mapper(entries2) }} />
     </Container>
   );
 }
@@ -50,3 +55,6 @@ export const AppRoute = {
   component: App,
   url: '/',
 }
+
+// <TechRadar config={{ ...config, entries: mapper(entries2) }} />
+// <TechRadar config={{ ...config, entries: entries.map((a: any) => ({ ...a, active: 0, link: '', moved: 0})) }} />

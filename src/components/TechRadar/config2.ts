@@ -143,7 +143,7 @@ export const entries2 = [
     "Technology": "Angular (2.x+)",
     "Tags": "framework, frontend",
     "Quadrant": "Framework",
-    "Ring": "Trial",
+    "Ring": "Hold",
     "Comment": " (or enough usage for \"Adopt\"?) (question)"
   },
   {
