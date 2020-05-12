@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "../../components/layout/Container";
 import { TechRadar } from "../../components/TechRadar/TechRadar";
-import { config } from '../../components/TechRadar/config';
+import { useSelector, useDispatch } from "react-redux";
+import { entriesList, getEntries } from "../../features/entries/entriesSlice";
+import { configObject, getConfig } from "../../features/config/configSlice";
 
 
 
 
 function App() {
+  const entries = useSelector(entriesList) as any;
+  const config = useSelector(configObject) as any;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getConfig());
+    dispatch(getEntries());
+  }, []);
+
   return (
     <Container>
-      <TechRadar config={config} entries={[]} />
+      <TechRadar config={{ ...config, entries: entries.map((a: any) => ({ ...a })) }} />
     </Container>
   );
 }
