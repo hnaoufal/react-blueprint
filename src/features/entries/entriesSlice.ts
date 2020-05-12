@@ -17,7 +17,7 @@ export const entriesSlice = createSlice({
     initialState,
     reducers: {
         get: (state, action: PayloadAction<Entries[]>) => {
-            state.list = action.payload;
+            state.list = [...action.payload];
         },
     },
 });

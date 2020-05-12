@@ -1,8 +1,12 @@
+/* tslint:disable */
+/* eslint-disable */
+
 import * as d3 from 'd3';
 
 export const radar_visualization = (config) => {
-  // config = { ...config, entries: config.entries };
-
+  console.log(Object.isExtensible(config));
+  console.log(Object.isExtensible(config.entries));
+  console.log(Object.isExtensible(config.entries[0]));
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
   var seed = 42;

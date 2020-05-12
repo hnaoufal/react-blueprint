@@ -859,7 +859,7 @@ export const config =
   //ENTRIES
 };
 
-export const MOCKCONFIG = {
+export let MOCKCONFIG = {
   svg_id: "radar",
   width: 1450,
   height: 1000,
@@ -883,7 +883,7 @@ export const MOCKCONFIG = {
   print_layout: true,
 }
 
-export const MOCKENTRIES = [
+export let MOCKENTRIES = [
   {
     quadrant: 3,
     ring: 0,
