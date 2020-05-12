@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ListComponent } from './ListCompnont';
+import axios from 'axios';
 
 export const Bosch = () => {
   const [active, setActive] = useState(false);
@@ -9,19 +10,10 @@ export const Bosch = () => {
     <div>
       {active && <h1>oentuhoenuh</h1>}
       <button onClick={() => setActive(true)}>Click me</button>
-      <ListComponent list={list} />
+      <ListComponent list={list}>
+        Inside List
+      </ListComponent>
       <ListComponent list={['onetuhoenhu', 'eontuhntoeuhnt', 'eouhonethuntohu']} />
     </div>
   )
 };
-
-// React
-// React (jsx)
-// React (Props)
-// React (State)
-
-
-// Other topics
-// Routing?
-// Requests?
-// State Handling
