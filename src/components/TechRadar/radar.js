@@ -1,6 +1,7 @@
 import * as d3 from 'd3';
 
 export const radar_visualization = (config) => {
+  // config = { ...config, entries: config.entries };
 
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
@@ -123,6 +124,7 @@ export const radar_visualization = (config) => {
   // position each entry randomly in its segment
   for (var i = 0; i < config.entries.length; i++) {
     var entry = config.entries[i];
+    // debugger;
     entry.segment = segment(entry.quadrant, entry.ring);
     var point = entry.segment.random();
     entry.x = point.x;

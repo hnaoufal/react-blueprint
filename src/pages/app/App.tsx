@@ -1,12 +1,16 @@
 import React from "react";
-import TechRadar from "../tech-radar/TechRadar";
-import {Container} from "../../components/layout/Container";
+import { Container } from "../../components/layout/Container";
+import { TechRadar } from "../../components/TechRadar/TechRadar";
+import { config } from '../../components/TechRadar/config';
+
+
+
 
 function App() {
   return (
-      <Container>
-        <TechRadar/>
-      </Container>
+    <Container>
+      <TechRadar config={config} entries={[]} />
+    </Container>
   );
 }
 
