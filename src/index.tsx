@@ -9,13 +9,14 @@ import AppRouter from './routes';
 /* Routes */
 import { AppRoute } from './pages/app/App';
 import { TechRadarRoute } from './pages/tech-radar/TechRadar';
+import { EditRoute } from './pages/tech-radar/edit/Edit';
 /* Routes */
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <AppRouter routes={[AppRoute, TechRadarRoute]} />
+      <AppRouter routes={[AppRoute, TechRadarRoute, EditRoute]} />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
