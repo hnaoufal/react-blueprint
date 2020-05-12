@@ -50,8 +50,7 @@ export const config =
   ],
   rings: [
     { name: "ADOPT", color: "#93c47d" },
-    { name: "TRIAL", color: "#93d2c2" },
-    { name: "ASSESS", color: "#fbdb84" },
+    { name: "TRIAL/ASSESS", color: "#93d2c2" },
     { name: "HOLD", color: "#efafa9" }
   ],
   print_layout: true,
@@ -114,7 +113,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "Hadoop",
       active: false,
       link: "../data_processing/hadoop.html",
@@ -122,7 +121,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "YARN",
       active: false,
       link: "../data_processing/yarn.html",
@@ -130,7 +129,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "Esper",
       active: false,
       link: "../data_processing/esper.html",
@@ -210,7 +209,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "Consul",
       active: false,
       link: "../datastores/consul.html",
@@ -218,7 +217,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "Google Bigtable",
       active: false,
       link: "../datastores/google_bigtable.html",
@@ -226,7 +225,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "RocksDB",
       active: false,
       link: "../datastores/rocksdb.html",
@@ -234,7 +233,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "Aerospike",
       active: false,
       link: "../datastores/aerospike.html",
@@ -242,7 +241,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "CouchBase",
       active: false,
       link: "../datastores/couchbase.html",
@@ -250,7 +249,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "HBase",
       active: false,
       link: "../datastores/hbase.html",
@@ -258,7 +257,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "Memcached",
       active: false,
       link: "../datastores/memcached.html",
@@ -266,7 +265,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "MongoDB",
       active: false,
       link: "../datastores/mongodb.html",
@@ -274,7 +273,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "MySQL",
       active: false,
       link: "../datastores/mysql.html",
@@ -282,7 +281,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "Oracle DB",
       active: false,
       link: "../datastores/oracle_db.html",
@@ -290,7 +289,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "ZooKeeper",
       active: false,
       link: "../datastores/zookeeper.html",
@@ -418,7 +417,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Aurelia",
       active: false,
       link: "../frameworks/aurelia.html",
@@ -426,7 +425,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Ember.js",
       active: false,
       link: "../frameworks/emberjs.html",
@@ -434,7 +433,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "gRPC",
       active: false,
       link: "../frameworks/grpc.html",
@@ -442,7 +441,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Http4s",
       active: false,
       link: "../frameworks/http4s.html",
@@ -450,7 +449,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "jOOQ",
       active: false,
       link: "../frameworks/jooq.html",
@@ -458,7 +457,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Redux",
       active: false,
       link: "../frameworks/redux.html",
@@ -466,7 +465,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Vert.x",
       active: false,
       link: "../frameworks/vertx.html",
@@ -474,7 +473,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 2,
+      ring: 1,
       label: "Vue.js",
       active: false,
       link: "../frameworks/vuejs.html",
@@ -482,7 +481,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 3,
+      ring: 2,
       label: "Activiti",
       active: false,
       link: "../frameworks/activiti.html",
@@ -490,7 +489,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 3,
+      ring: 2,
       label: "AngularJS 1.x",
       active: false,
       link: "../frameworks/angularjs_1x.html",
@@ -498,7 +497,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 3,
+      ring: 2,
       label: "BackboneJS",
       active: false,
       link: "../frameworks/backbonejs.html",
@@ -506,7 +505,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 3,
+      ring: 2,
       label: "Drools",
       active: false,
       link: "../frameworks/drools.html",
@@ -514,7 +513,7 @@ export const config =
     },
     {
       quadrant: 2,
-      ring: 3,
+      ring: 2,
       label: "Spray",
       active: false,
       link: "../frameworks/spray.html",
@@ -594,7 +593,7 @@ export const config =
     },
     {
       quadrant: 1,
-      ring: 2,
+      ring: 1,
       label: "AWS Lambda",
       active: false,
       link: "../infrastructure/aws_lambda.html",
@@ -602,7 +601,7 @@ export const config =
     },
     {
       quadrant: 1,
-      ring: 3,
+      ring: 2,
       label: "STUPS",
       active: false,
       link: "../infrastructure/stups.html",
@@ -706,7 +705,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "Elm",
       active: true,
       link: "elm.html",
@@ -714,7 +713,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 2,
+      ring: 1,
       label: "R",
       active: true,
       link: "r.html",
@@ -722,7 +721,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 2,
+      ring: 1,
       label: "Rust",
       active: true,
       link: "rust.html",
@@ -730,7 +729,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "C languages",
       active: true,
       link: "c_languages.html",
@@ -738,7 +737,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "CoffeeScript",
       active: true,
       link: "coffeescript.html",
@@ -746,7 +745,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "Erlang",
       active: true,
       link: "erlang.html",
@@ -754,7 +753,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "Groovy",
       active: true,
       link: "groovy.html",
@@ -762,7 +761,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: ".NET languages",
       active: true,
       link: "net_languages.html",
@@ -770,7 +769,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "Perl",
       active: true,
       link: "perl.html",
@@ -778,7 +777,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "PHP",
       active: true,
       link: "php.html",
@@ -786,7 +785,7 @@ export const config =
     },
     {
       quadrant: 0,
-      ring: 3,
+      ring: 2,
       label: "Ruby",
       active: true,
       link: "ruby.html",
@@ -834,7 +833,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 2,
+      ring: 1,
       label: "AWS Kinesis",
       active: false,
       link: "../queues/aws_kinesis.html",
@@ -842,7 +841,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "ActiveMQ",
       active: false,
       link: "../queues/activemq.html",
@@ -850,7 +849,7 @@ export const config =
     },
     {
       quadrant: 3,
-      ring: 3,
+      ring: 2,
       label: "HornetQ",
       active: false,
       link: "../queues/hornetq.html",
