@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import styles from "./App.module.css";
-import {AppBar, Button, IconButton, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, IconButton, Toolbar, Typography} from "@material-ui/core";
 import EditIcon from "@material-ui/icons/Edit";
 import Home from '@material-ui/icons/Home';
 import {Link} from "react-router-dom";

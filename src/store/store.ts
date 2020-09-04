@@ -1,15 +1,15 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-import usersReducer from '../features/users/usersSlice';
-import entriesReducer from '../features/entries/entriesSlice';
-import configReducer from '../features/config/configSlice';
+import config1Reducer from '../features/config1/config1Slice';
+import config2Reducer from '../features/config2/config2Slice';
+import config3Reducer from '../features/config3/config3Slice';
+import config4Reducer from '../features/config4/config4Slice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-    users: usersReducer,
-    entries: entriesReducer,
-    config: configReducer
+    config1: config1Reducer,
+    config2: config2Reducer,
+    config3: config3Reducer,
+    config4: config4Reducer,
   },
 });
 

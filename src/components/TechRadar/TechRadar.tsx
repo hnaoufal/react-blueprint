@@ -7,12 +7,11 @@ export const TechRadar = ({ config }: any) => {
 
   useEffect(() => {
     if (config.svg_id && config.entries.length > 0) {
-      console.log(config);
       radar_visualization(config);
     }
   }, [config]);
 
   return <div className={styles.techRadar}>
-    <svg id="radar"></svg>
+    <svg id={config.svg_id}></svg>
   </div>
 };

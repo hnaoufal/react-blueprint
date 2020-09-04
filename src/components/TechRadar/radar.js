@@ -3,12 +3,8 @@
 
 import * as d3 from 'd3';
 
-export const radar_visualization = (config) => {
-  console.log(Object.isExtensible(config));
-  console.log(Object.isExtensible(config.entries));
-  console.log(Object.isExtensible(config.entries[0]));
-  // custom random number generator, to make random sequence reproducible
-  // source: https://stackoverflow.com/questions/521295
+export const radar_visualization = (cfg) => {
+  const config = {...cfg, entries: cfg.entries.map(e => ({...e}))}
   var seed = 42;
   function random() {
     var x = Math.sin(seed++) * 10000;
